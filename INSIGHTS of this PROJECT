@@ -1,0 +1,114 @@
+You manually edited the hosts file — the same thing the Python script does automatically.
+
+You told your computer:
+
+"Whenever someone asks for www.youtube.com, send them to 127.0.0.1 instead." 
+
+Date and time refers to that we cannot open youtube or any other websites i have added in the working hours but not the case of remaining hours
+
+=========================================================================================================================
+
+✅ Step 1: Open Notepad as Administrator (Windows)
+(If you're on Mac/Linux, I’ll guide you too — just keep reading)
+
+Press Windows key, type Notepad
+Right-click → "Run as administrator"
+Click Yes when it asks for permission
+🔐 Why? Because only admin can edit system files. 
+
+✅ Step 2: Open the hosts file
+In Notepad:
+
+Go to File → Open
+Navigate to:
+C:\Windows\System32\drivers\etc\
+At the bottom, change "Text Documents" to "All Files"
+Click on the file called hosts (no extension) → Open it
+You’ll see something like:
+
+
+
+1
+2
+127.0.0.1       localhost
+::1             localhost
+✅ Step 3: Add This Line
+At the end of the file, add:
+
+
+
+1
+127.0.0.1 www.youtube.com
+👉 Like this:
+
+
+
+1
+2
+3
+127.0.0.1       localhost
+::1             localhost
+127.0.0.1       www.youtube.com
+Then save the file.
+
+💡 If it won’t save, make sure you ran Notepad as Admin. 
+
+✅ Step 4: Open Your Browser
+Now go to:
+👉 https://www.youtube.com
+
+Hit Enter.
+
+🎯 What Happens?
+You’ll likely see one of these:
+
+A timeout error: "This site can’t be reached"
+A blank page
+Or it takes forever and fails
+👉 YouTube didn’t load.
+
+Not because the internet is broken.
+Not because YouTube is down.
+But because your computer was tricked into going to 127.0.0.1 — which is your own machine — and nothing is there.
+
+✅ So it fails.
+
+
+============================================================================================================
+"It means when I open YouTube, it is not opening YouTube." 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
